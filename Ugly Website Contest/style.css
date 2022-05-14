@@ -1,0 +1,152 @@
+
+#title{
+    grid-area: title;
+    font-family: 'Gloria Hallelujah',sans-serif;
+    font-size: 100px;
+    color: deeppink;
+    position: relative;
+    left: 270px;
+    top: 20px;
+
+    }   
+body{
+      background-image: url('https://c.tenor.com/P9sM9hPhv3cAAAAd/eyes-eyes-rolling.gif');
+      
+    display: grid;
+    
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas:
+    ". title right"
+    "nav nav right"
+    ;
+    height: 100vh;
+}
+h1{
+    position: relative;
+    left: 20px;
+}
+h2{
+    position: relative;
+    left: 100px;
+    bottom: 420px;
+}
+h3{
+    position: relative;
+    bottom: 700px;
+    left: 180px;
+}
+#right{
+    grid-area: right;
+}
+#right ul li{
+    list-style: none;
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    
+    border: solid;
+    border-color: fuchsia;
+    border-width: 4px;
+    padding: 12px;
+}
+#right ul li:hover{
+    background-color: fuchsia;
+}
+#right ul li a{
+    color: fuchsia;
+}
+#right ul li a:hover{
+    background-color: fuchsia;
+}
+#right img{
+    height: 36vh;
+}
+#mid-button{
+    position: relative;
+    left: 10px;
+    top: 4px;
+}
+#top-link{
+    position: relative;
+    top: 30px;
+    right: 25px;
+}
+nav{
+    grid-area: nav;
+
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    width: 30%;
+    background-color: palevioletred;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+}
+nav ul li:hover{
+    background-color: peachpuff;
+}
+nav ul li a{
+    font-weight: bolder;
+    color: peachpuff;
+    font-size: x-large;
+}
+#home-link{
+    position: relative;
+    top: 25px;
+}
+#about-link{
+    position: relative;
+    left: 50px;
+}
+#buy-link{
+    position: relative;
+    bottom: 30px;
+}
+#top{
+    position: fixed;
+
+}
+#about img{
+    height: 300px;
+}
+#bell{
+    font-size: xx-large;
+    color: plum;
+    position: relative;
+    left: 900px;
+    background-color: white;
+    height: 200px;
+}
+#billy{
+    position: relative;
+    left: 700px;
+    bottom:200px;
+}
+
+img,h1,h2,ul,h3 {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
